@@ -1,0 +1,55 @@
+INPUT: outputs/titanic_cleaned.csv
+SHAPE: (891, 14)
+
+DTYPES:
+PassengerId      int64
+Survived         int64
+Pclass           int64
+Name            object
+Sex              int64
+Age            float64
+SibSp          float64
+Parch          float64
+Ticket          object
+Fare           float64
+CabinKnown       int64
+Embarked_C        bool
+Embarked_Q        bool
+Embarked_S        bool
+dtype: object
+
+MISSING VALUES:
+PassengerId    0
+Survived       0
+Pclass         0
+Name           0
+Sex            0
+Age            0
+SibSp          0
+Parch          0
+Ticket         0
+Fare           0
+CabinKnown     0
+Embarked_C     0
+Embarked_Q     0
+Embarked_S     0
+dtype: int64
+
+NUMERIC SUMMARY:
+       PassengerId    Survived      Pclass         Sex           Age         SibSp         Parch          Fare  CabinKnown
+count   891.000000  891.000000  891.000000  891.000000  8.910000e+02  8.910000e+02  8.910000e+02  8.910000e+02  891.000000
+mean    446.000000    0.383838    2.308642    0.352413  2.073413e-16  6.778466e-17  5.382900e-17  2.392400e-17    0.228956
+std     257.353842    0.486592    0.836071    0.477990  1.000562e+00  1.000562e+00  1.000562e+00  1.000562e+00    0.420397
+min       1.000000    0.000000    1.000000    0.000000 -2.157819e+00 -4.745452e-01 -4.736736e-01 -6.484217e-01    0.000000
+25%     223.500000    0.000000    2.000000    0.000000 -5.724938e-01 -4.745452e-01 -4.736736e-01 -4.891482e-01    0.000000
+50%     446.000000    0.000000    3.000000    0.000000 -2.340704e-01 -4.745452e-01 -4.736736e-01 -3.573909e-01    0.000000
+75%     668.500000    1.000000    3.000000    1.000000  5.179814e-01  4.327934e-01 -4.736736e-01 -2.424635e-02    0.000000
+max     891.000000    1.000000    3.000000    1.000000  3.827009e+00  6.784163e+00  6.974147e+00  9.667167e+00    1.000000
+
+CATEGORICAL SUMMARY:
+                           Name  Ticket
+count                       891     891
+unique                      891     681
+top     Braund, Mr. Owen Harris  347082
+freq                          1       7
+

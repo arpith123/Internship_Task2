@@ -1,0 +1,55 @@
+INPUT: outputs/titanic_cleaned_post_outliers.csv
+SHAPE: (775, 14)
+
+DTYPES:
+PassengerId      int64
+Survived         int64
+Pclass           int64
+Name            object
+Sex              int64
+Age            float64
+SibSp          float64
+Parch          float64
+Ticket          object
+Fare           float64
+CabinKnown       int64
+Embarked_C        bool
+Embarked_Q        bool
+Embarked_S        bool
+dtype: object
+
+MISSING VALUES:
+PassengerId    0
+Survived       0
+Pclass         0
+Name           0
+Sex            0
+Age            0
+SibSp          0
+Parch          0
+Ticket         0
+Fare           0
+CabinKnown     0
+Embarked_C     0
+Embarked_Q     0
+Embarked_S     0
+dtype: int64
+
+NUMERIC SUMMARY:
+       PassengerId    Survived     Pclass         Sex         Age       SibSp       Parch        Fare  CabinKnown
+count   775.000000  775.000000  775.00000  775.000000  775.000000  775.000000  775.000000  775.000000  775.000000
+mean    445.806452    0.339355    2.48000    0.314839   -0.073835   -0.077658   -0.050830   -0.289579    0.147097
+std     260.116285    0.473796    0.73439    0.464752    0.923875    0.816458    0.975558    0.273391    0.354431
+min       1.000000    0.000000    1.00000    0.000000   -2.095399   -0.474545   -0.473674   -0.648422    0.000000
+25%     213.500000    0.000000    2.00000    0.000000   -0.572494   -0.474545   -0.473674   -0.489442    0.000000
+50%     450.000000    0.000000    3.00000    0.000000   -0.309276   -0.474545   -0.473674   -0.386671    0.000000
+75%     670.500000    1.000000    3.00000    1.000000    0.442776    0.432793   -0.473674   -0.124920    0.000000
+max     891.000000    1.000000    3.00000    1.000000    1.965681    4.062148    6.974147    0.660333    1.000000
+
+CATEGORICAL SUMMARY:
+                           Name Ticket
+count                       775    775
+unique                      775    632
+top     Braund, Mr. Owen Harris   1601
+freq                          1      7
+
